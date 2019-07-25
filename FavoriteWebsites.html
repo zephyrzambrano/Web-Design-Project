@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Favorite Websites</title>
+  </head>
+
+  <script>
+  <!---Hide from older browsers
+  function jump_to_link(weblist) {
+    var url_number=weblist.selectedIndex;
+    location=weblist.options[url_number].value;
+  }
+  //Stop hiding --->
+  </script>
+
+  </head>
+  <body style="background-color:powderblue;">
+    <h3><a href="Home.php">Return Home</a></h3>
+    <center>
+    <h1>These are some of my favorite websites.</h1>
+
+    <form name="glinks">
+      <table cellpadding="5">
+        <tr>
+          <td>Select a website:</td>
+          <td>
+            <select name="leg" onchange="jump_to_link(this);">
+            <option value="javascript:location.reload()">Select a Web page on the favorites
+            <option value="https://github.com/dashboard">GitHub
+            <option value="http://www.youtube.com/">YouTube
+            <option value="https://sims.rutgers.edu/webreg/">Web Registration System
+            <option value="https://sis.rutgers.edu/soc/#home">Rutgers Schedule of Classes
+            <option value="https://careers.rutgers.edu/">Rutgers Career Services
+            </select>
+          </td>
+        </tr>
+      </table>
+    </form>
+    </center>
+  </body>
+</html>
